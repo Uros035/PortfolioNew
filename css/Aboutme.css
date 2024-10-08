@@ -1,0 +1,119 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #1a1a1a; /* Svetlija nijansa */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5); /* Dublja senka */
+    z-index: 100;
+    padding: 10px 0;
+}
+
+#container-fluid {
+    display: flex;
+    justify-content: flex-end; /* Linkovi poravnati desno */
+    padding: 0 20px; /* Razmak s leve i desne strane */
+    color: #EAEAEA;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+}
+
+/* Glavni sadržaj */
+body {
+   /* background-image: url('../images/pozadina.jpg');*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #121212;
+    /*background: linear-gradient(300deg, #070707, #949b91, #000000);*/
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Osigurava da je sadržaj vertikalno centriran */
+    padding-top: 60px; /* Prostor ispod zaglavlja */
+}
+
+#container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Visina kontejnera da pokrije ceo ekran */
+}
+
+.about-section {
+    padding-top: 60px; /* Razmak od vrha stranice */
+    padding-bottom: 60px; /* Razmak od dna stranice */
+  }
+  
+  .about-text {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #EAEAEA;
+    margin-bottom: 40px; /* Veći razmak ispod teksta */
+  }
+  
+  .about-title {
+    font-size: 32px; /* Veći font za naslov */
+    color: #EAEAEA;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center; /* Centriraj naslov */
+    text-transform: uppercase;
+  }
+
+
+/* Opcionalno, efekat na hover */
+.about-text:hover {
+    opacity: 0.8; /* Još manja neprozirnost na hover */
+    box-shadow: 0px 4px 30px rgba(255, 248, 248, 0.2); /* Blago pojačana senka */
+}
+
+.logo-text {
+    font-size: 24px; /* Veličina fonta za tekst logoa */
+    font-weight: bold; /* Podebljan tekst */
+    color: #EAEAEA; /* Boja logoa */
+    text-decoration: none; /* Bez podvlačenja */
+    margin-right: auto; /* Osigurava da logo bude levo */
+}
+
+.navbar-brand:hover {
+    color: #5c6148; /* Opcionalno, promeni boju na hover */
+}
+
+.skills-section {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .skills-title {
+    font-size: 28px;
+    color: #EAEAEA;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    display: inline-block;
+    background-color: #5c6148;
+    color: #EAEAEA;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .skills-list li:hover {
+    background-color: #121212;
+  }

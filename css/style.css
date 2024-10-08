@@ -1,0 +1,130 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #1a1a1a; /* Svetlija nijansa */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5); /* Dublja senka */
+    z-index: 100;
+    padding: 10px 0;
+}
+
+#container-fluid {
+    display: flex;
+    justify-content: flex-end; /* Linkovi poravnati desno */
+    padding: 0 20px; /* Razmak s leve i desne strane */
+    color: #EAEAEA;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+}
+
+/* Glavni sadržaj */
+body {
+   /* background-image: url('../images/pozadina.jpg');*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #121212;
+    /*background: linear-gradient(300deg, #070707, #949b91, #000000);*/
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Osigurava da je sadržaj vertikalno centriran */
+    padding-top: 60px; /* Prostor ispod zaglavlja */
+}
+
+#container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Visina kontejnera da pokrije ceo ekran */
+}
+
+.about-box {
+    display: flex;
+    justify-content: space-between; /* Rasporedi elemente horizontalno */
+    align-items: center; /* Poravnaj sliku i tekst vertikalno */
+    max-width: 800px; /* Maksimalna širina za sadržaj */
+    margin: 0 auto; /* Centriraj kontejner na stranici */
+    padding: 20px;
+    gap: 20px; /* Razmak između slike i teksta */
+}
+
+.about-text {
+    flex: 1; /* Tekst zauzima ostatak raspoloživog prostora */
+    font-size: 20px; /* Standardna veličina */
+    line-height: 1.6; /* Proporcija između redova */
+    color: #EAEAEA; /* Boja teksta */
+    font-family: 'Arial', sans-serif; /* Font */
+}
+
+.hello-text {
+    font-size: 25px; /* Veći font za isticanje */
+    color: #EAEAEA; /* Osvetljena boja za kontrast */
+    font-weight: bold; /* Podebljan font */
+    margin-bottom: 20px; /* Razmak ispod */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Blaga senka za dubinu */
+}
+
+.about-title {
+    font-size: 30px; /* Najveći font za naslov */
+    color: #EAEAEA; /* Boja koja se uklapa */
+    margin-bottom: 20px; /* Razmak ispod */
+    font-weight: 700; /* Podebljan tekst za naglašavanje */
+    font-family: 'Georgia', serif; /* Različit stil fonta za naglašavanje */
+    text-align: left; /* Poravnanje teksta */
+    text-transform: uppercase; /* Sve velike za naglašavanje */
+}
+
+.profile-picture {
+    border-radius: 30%; /* Okrugla slika */
+    width: 220px;
+    height: 220px;
+    margin-bottom: 20px;
+    opacity: 0.9; /* Blaga prozirnost */
+    /*box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Blaga senka sa zamućenjem */
+   /* mix-blend-mode: multiply; /* Efekat mešanja sa pozadinom */
+    transition: all 0.3s ease; /* Glatka tranzicija efekata */
+}
+
+/* Opcionalno, efekat na hover */
+.wrapper:hover {
+    opacity: 0.8; /* Još manja neprozirnost na hover */
+    box-shadow: 0px 4px 30px rgba(255, 248, 248, 0.2); /* Blago pojačana senka */
+}
+
+.logo-text {
+    font-size: 24px; /* Veličina fonta za tekst logoa */
+    font-weight: bold; /* Podebljan tekst */
+    color: #EAEAEA; /* Boja logoa */
+    text-decoration: none; /* Bez podvlačenja */
+    margin-right: auto; /* Osigurava da logo bude levo */
+}
+
+.navbar-brand:hover {
+    color: #5c6148; /* Opcionalno, promeni boju na hover */
+}
+
+.wrapper {
+    width: 100%;
+    height: auto; /* Možeš koristiti auto da bi sadržaj zauzimao odgovarajuću visinu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Dodaj padding za dodatni prostor */
+}
+
+.content-box { /* Novi stil */
+    width: 100%;
+    max-width: 800px; /* Maksimalna širina za sadržaj */
+    padding: 20px; /* Unutrašnji prostor */
+    background-color: #1a1a1a; /* Pozadina za sadržaj */
+    border-radius: 8px; /* Zaobljeni uglovi */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Senka oko boxa */
+    color: #eaeaea; /* Boja teksta unutar boxa */
+}
